@@ -125,3 +125,36 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* 13- Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+/* TODO: Learn more about two underscores in below '.list__item' class  */
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 3rem;
+}
+
+/* IMP: Below is the example for nesting css, usually we should avaid nexting as it will lead to overly specific selectors. */
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
