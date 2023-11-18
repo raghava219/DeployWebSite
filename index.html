@@ -30,7 +30,19 @@
                 <p class="hero__tagline">Deploy yor website in less than 60 seconds</p>
                 <a href="" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
-            <img src="images/banner.png" alt="" class="hero__image" />
+            <!-- Photoshop is used to reduce the size of banner.png file to smaller banner.png and banner@2x.png files  -->
+            <!-- www.cloudconvert.com is used to cenvert the above .png files to .webp files  -->
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+                />
+                <source
+                  type="image/png"
+                  srcset="images/banner.png 1x, images/banner@2x.png 2x"
+                />
+                <img src="images/banner.png" alt="" class="hero__image" />
+            </picture>          
         </div>
     </section>
 
