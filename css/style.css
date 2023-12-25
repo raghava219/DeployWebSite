@@ -342,11 +342,19 @@ a {
   color: #fff;
 }
 
+.card--primary .badge--primary {
+  background-color: #126de4;
+}
+
 .card--secondary .badge--secondary {
   background: #02cdf1;
 }
 
 /* 19-Plans */
+
+.plan {
+  transition: transform 0.2s ease-out;
+}
 
 .plan__name {
   color: #fff;
@@ -377,8 +385,20 @@ a {
   margin-bottom: 2rem;
 }
 
+.plan--popular {
+  transform: scale(1.1); /* Scale this by 10% */
+}
+
 .plan--popular .card__header {
   position: relative;
+}
+
+.plan:hover {
+  transform: scale(1.05); /* Scale this by 5% */
+}
+
+.plan--popular:hover {
+  transform: scale(1.15); /* Scale this by 15% */
 }
 
 .plan--popular .card__header::before {
@@ -761,4 +781,15 @@ a {
   .block-domain__prices {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* 32 - Plans Block */
+
+.block-plans .grid {
+  gap: 8rem 4rem; /*For rows 8 rems are used and from columns 4 rems are used.*/
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
 }
