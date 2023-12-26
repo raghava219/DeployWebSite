@@ -793,3 +793,28 @@ a {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* 33 - Features Block */
+
+.feature {
+  gap: 4rem 2rem; /* 4rem of vertical and 2rem of horizantal */
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feture__heading {
+  margin: 1rem 0; /* 1 rem vertical and 0 horizantal */
+}
+
+.feature__image {
+  width: 100%; /* Reducing the size of the browser, the image need to reduce accordingly.*/
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+}
