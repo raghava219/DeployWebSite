@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -30,7 +31,7 @@
     <section class="block block--dark block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
+                <h1 data-aos="fade-right" class="block__heading">Cloud Hosting for Pros</h1>
                 <p class="hero__tagline">
                     Deploy yor website in less than 60 seconds
                 </p>
@@ -38,7 +39,7 @@
             </header>
             <!-- Photoshop is used to reduce the size of banner.png file to smaller banner.png and banner@2x.png files  -->
             <!-- www.cloudconvert.com is used to cenvert the above .png files to .webp files  -->
-            <picture>
+            <picture data-aos="zoom-in">
                 <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" />
                 <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" />
                 <img src="images/banner.png" alt="" class="hero__image" />
@@ -46,7 +47,7 @@
         </div>
     </section>
 
-    <section class="block container block-domain">
+    <section data-aos="fade-up" class="block container block-domain">
         <header class="block__header">
             <h2>Starting at $9 per month</h2>
             <p>
@@ -72,7 +73,7 @@
         </ul>
     </section>
 
-    <section class="block container block-plans">
+    <section data-aos="fade-up" class="block container block-plans">
         <div class="grid grid--1x3">
             <div class="plan">
                 <div class="card card--secondary">
@@ -146,7 +147,7 @@
             </p>
         </header>
         <article class="grid grid--1x2 feature">
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#easy"></use>
@@ -159,7 +160,7 @@
                 </p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <picture>
+            <picture data-aos="zoom-in-left">
                 <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x" />
                 <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x" />
                 <img class="feature__image" src="images/easy@2x.jpg" alt="" />
@@ -232,12 +233,12 @@
             <h2>User-friendly Control Panel</h2>
         </header>
         <div class="container grid grid--1x2">
-            <picture class="block-showcase__image">
+            <picture data-aos="fade-right" class="block-showcase__image">
                 <source type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x" />
                 <source type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x" />
                 <img src="images/ipad.png" alt="" />
             </picture>
-            <ul class="list">
+            <ul class="list" data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -293,7 +294,7 @@
         </div>
     </section>
 
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
             <h2>What our Customers are Saying</h2>
             <p>
@@ -420,8 +421,12 @@
             </section>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
